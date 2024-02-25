@@ -1,0 +1,72 @@
+.container{
+  position: relative;
+  height: 400vh;
+  max-width: 100vw;
+  
+.parent{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    height: 100vh;
+    max-width: 100vw;
+
+    .element{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+
+       .imageContainer{
+        // japan
+        border-radius: 10px;
+        overflow: hidden;
+           position: relative;
+           width: 25vw;
+           height: 25vh;
+           top:0
+        }
+        &:nth-of-type(2){
+            //water
+            .imageContainer{
+              top: 30vh;
+              left: -10vw;
+                width: 50vw;
+                height: 25vh;
+             
+            }
+        }
+        &:nth-of-type(3){
+            // mountain
+            .imageContainer{
+                top:-17vh;
+                left: -30vw;
+                width: 27vw;
+            height: 60vh;
+            }
+        }
+        &:nth-of-type(4){
+            // frame
+            .imageContainer{
+                top:18vh;
+                left:30vw;
+                width: 25vw;
+                height:60vh;
+            }
+        }
+        &:nth-of-type(5){
+            // mic
+            .imageContainer{
+                top:-33vh;
+                left: 4vw;
+                width: 30vw;
+                height: 32vh;
+            }
+        }
+    }
+
+}
+}
